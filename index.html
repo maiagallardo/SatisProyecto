@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./multimedia/fotomariposa1.png" type="image/x-iconn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Satis</title>
+    <style>
+        body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg header__navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo" src="./multimedia/logoHorizontal.png" width="250px"
+                        alt="satisMariposa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse alineacionDerecha" id="navbarNav">
+                    <ul class="navbar-nav header__navbar__list">
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="./pages/cocina.html">Cocina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="./pages/vasos.html">Vasos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="./pages/botellas.html">Botellas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="./pages/decoracion.html">Decoracion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="./pages/libreria.html">Libreria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="./pages/infantil.html">Infantil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="./pages/mate.html">Mate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--===========================CARRUSEL=============================-->
+        <div id="carouselExampleAutoplaying" class="carousel slide carrusel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/galeriaUnoIndex.png" class="imagenCarrusel d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/galeriaDosIndex.png" class="imagenCarrusel d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/galeriaTresIndex.png" class="imagenCarrusel d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev botonGaleria" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next botonGaleria" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section>
+            <h1 class="tituloPromos">Promos</h1>
+            <div class="galeriaPromos">
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./multimedia/dispenserYPortacubiertosPromo.png" class="card-img-top" alt="vasoLila">
+                    <div class="card-body">
+                        <h5 class="card-title">$1700</h5>
+                        <p class="card-text">Dispenser + Portacubiertos</p>
+                    </div>
+                </div>
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./SatisImagenes/decoracion/Canasto rattan.jpg" class="card-img-top" alt="canasto">
+                    <div class="card-body">
+                        <h5 class="card-title">2 x $2000</h5>
+                        <p class="card-text">Canastos Rattan</p>
+                    </div>
+                </div>
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./SatisImagenes/decoracion/Cesto arpillera AMA.jpg" class="card-img-top" alt="cesto">
+                    <div class="card-body">
+                        <h5 class="card-title">2 x $2000</h5>
+                        <p class="card-text">Cestos de Arpilleria</p>
+                    </div>
+                </div>
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./SatisImagenes/decoracion/individual hoja.jpg" class="card-img-top" alt="individual">
+                    <div class="card-body">
+                        <h5 class="card-title">$1000 c/u</h5>
+                        <p class="card-text">Comprando más de 4 individuales</p>
+                    </div>
+                </div>
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./SatisImagenes/cocina/Organizador heladera con manija-1.jpeg" class="card-img-top" alt="organizadorHeladera">
+                    <div class="card-body">
+                        <h5 class="card-title">2 x $2000</h5>
+                        <p class="card-text">Organizador de Heladera</p>
+                    </div>
+                </div>
+                <div class="card galeriaPromosHijos" style="width: 18rem; height: 18rem;">
+                    <img src="./SatisImagenes/infantil/individual infantil pato.jpeg" class="card-img-top" alt="individualInfantil">
+                    <div class="card-body">
+                        <h5 class="card-title">$1000 c/u</h5>
+                        <p class="card-text">Comprando más de 4 individuales</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="mostradorPrincipal">
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/cocina/Escurridor gris.jpg" alt="escurridor">
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Cocina</h2>
+                <a class="botonVerMas" href="./pages/cocina.html">Ver más</a>
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Vasos</h2>
+                <a class="botonVerMas" href="./pages/vasos.html">Ver más</a>
+            </div>
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/vasos/Vaso de acero cervecero.jpg"
+                    alt="vasoVintaje">
+            </div>
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/botellas/Vidrio limones.jpg" alt="escurridor">
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Botellas</h2>
+                <a class="botonVerMas" href="./pages/botellas.html">Ver más</a>
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Decoración</h2>
+                <a class="botonVerMas" href="./pages/decoracion.html">Ver más</a>
+            </div>
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/decoracion/Cesto arpillera AMA.jpg"
+                    alt="cestoArpillera">
+            </div>
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal"
+                    src="./SatisImagenes/libreria/Block planner semanal (blanco y negro).jpeg" alt="escurridor">
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Librería</h2>
+                <a class="botonVerMas" href="./pages/libreria.html">Ver más</a>
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Infantil</h2>
+                <a class="botonVerMas" href="./pages/infantil.html">Ver más</a>
+            </div>
+            <div class="seccionesArea"> <!--CAMBIAR FOTO-->
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/infantil/individual infantil stich.jpeg"
+                    alt="escurridor">
+            </div>
+            <div class="seccionesArea">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/mate/Juego de lata blanco.jpg" alt="escurridor">
+            </div>
+            <div class="seccionesArea">
+                <h2 class="titulosVerMas">Mate</h2>
+                <a class="botonVerMas" href="./pages/mate.html">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerInfo">
+            <h4 class="footerInfoLetra">Este proyecto es un sitio web para la venta de productos creado por Maia
+                Gallardo para el curso de
+                Desarrollo Web de Coderhouse</h4>
+            <h5 class="footerInfoCopyright">Copyright © 2023 Maia Gallardo. Derechos reservados.</h5>
+            <img src="./multimedia/fotomariposa1.png" width="100px" alt="">
+        </div>
+        <div class="footerRedes">
+            <a class="ig" href="https://www.instagram.com/satisoficial_/"><img class="footerRedesImagen"
+                    src="./multimedia/logoInstagram.ico" alt="Logo de Instagram"></a>
+            <a class="twitter" href="https://www.twitter.com/"><img class="footerRedesImagen"
+                    src="./multimedia/logoTwitter.ico" alt="Logo de Twitter"></a>
+            <a class="whatsapp" href="https://web.whatsapp.com/"><img class="footerRedesImagen"
+                    src="./multimedia/logoWhatsapp.ico" alt="Logo de Whatsapp"></a>
+            <a class="facebook" href="https://www.facebook.com/"><img class="footerRedesImagen"
+                    src="./multimedia/logoFacebook.ico" alt="Logo de Facebook"></a>
+        </div>
+    </footer>
+
+    <section>
+        <a class="botonAyuda" href="https://web.whatsapp.com/"><img class="fotoBotonAyuda"
+                src="./multimedia/botonAyuda.png" width="100px" alt="itemAyuda"></a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

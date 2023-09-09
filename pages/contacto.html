@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../multimedia/fotomariposa1.png" type="image/x-iconn">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <title>Satis</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg header__navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img id="logo" src="../multimedia/logoHorizontal.png" width="250px"
+            alt="satisMariposa"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse alineacionDerecha" id="navbarNav">
+          <ul class="navbar-nav header__navbar__list">
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/cocina.html">Cocina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/vasos.html">Vasos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/botellas.html">Botellas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/decoracion.html">Decoracion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/libreria.html">Libreria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/infantil.html">Infantil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/mate.html">Mate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__navbar__list--item--link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="contenedorContacto">
+    <section class="cuadroMail">
+      <h1 class="tituloConsultas">ENVIANOS UN MAIL CON TU CONSULTA</h1>
+      <form action="">
+        <label class="titulosFormulario" for="nombre">Nombre:</label>
+        <input class="controles" type="text" name="nombre" />
+
+        <label class="titulosFormulario" for="correo">Correo Electrónico:</label>
+        <input class="controles" for="text" name="correo" />
+
+        <label class="titulosFormulario" for="telefono">Teléfono:</label>
+        <input class="controles" for="text" name="telefono" />
+
+        <label class="titulosFormulario" for="mensaje">Mensaje:</label>
+        <textarea class="controles" name="mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside class="preguntasFrecuentes">
+      <h1 class="preguntasFrecuentes__titulo"><b>Preguntas Frecuentes</b></h1>
+      <h2 class="preguntasFrecuentes__titulo">¿Hacen envios?</h2>
+      <p>NO, pero tenemos puntos de entregas en distintas partes de CABA. Coordinás con nosotros día y horario y listo!
+      </p>
+      <h2 class="preguntasFrecuentes__titulo">¿Cuáles son los métodos de pago?</h2>
+      <p>Aceptamos mercado pago, transferencia y efectivo (abonando por transferencia o mercado pago hay un 10% de recargo)</p>
+    </aside>
+
+    <aside class="aclaraciones">
+      <h1 class="aclaraciones__titulo"><b>Aclaraciones</b></h1>
+      <p>Es posible que el producto que usted elija no este en stock en el momento. En este caso se hace la reserva
+        abonando el 50% como seña. El producto puede llegar a tardar unas semanas en entregarse. Por eso mismo preguntar
+        por stock disponible. Los precios de este catálogo corresponden al valor abonando en efectivo.</p>
+    </aside>
+
+    <footer>
+      <div class="footerInfo">
+        <h4 class="footerInfoLetra">Este proyecto es un sitio web para la venta de productos creado por Maia Gallardo
+          para el curso de
+          Desarrollo Web de Coderhouse</h4>
+        <h5 class="footerInfoCopyright">Copyright © 2023 Maia Gallardo. Derechos reservados.</h5>
+        <img src="../multimedia/fotomariposa1.png" width="100px" alt="">
+      </div>
+      <div class="footerRedes">
+        <a class="ig" href="https://www.instagram.com/satisoficial_/"><img class="footerRedesImagen"
+            src="../multimedia/logoInstagram.ico" alt="Logo de Instagram"></a>
+        <a class="twitter" href="https://www.twitter.com/"><img class="footerRedesImagen"
+            src="../multimedia/logoTwitter.ico" alt="Logo de Twitter"></a>
+        <a class="whatsapp" href="https://web.whatsapp.com/"><img class="footerRedesImagen"
+            src="../multimedia/logoWhatsapp.ico" alt="Logo de Whatsapp"></a>
+        <a class="facebook" href="https://www.facebook.com/"><img class="footerRedesImagen"
+            src="../multimedia/logoFacebook.ico" alt="Logo de Facebook"></a>
+      </div>
+    </footer>
+  </div>
+
+  <section>
+    <a class="botonAyuda" href="https://web.whatsapp.com/"><img src="../multimedia/botonAyuda.png" width="100px"
+        alt="itemAyuda"></a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*=========================== ESTILOS HEADER ===========================*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__navbar{
+    background: rgb(156,184,187,255);
+    border-radius: 15px;
+    width: 100%;
+    height: 70px;
+    margin: 1%;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    display: flex; 
+    justify-content: flex-end;
+}
+.header__navbar__list{
+    display: flex;
+    justify-content: flex-end;/*no hace nada*/
+    justify-items: flex-end;
+    width: 70%;
+}
+.header__navbar__list--item--link{
+    color: #274447;
+    text-decoration: none;
+    padding: 1.2rem;
+}
+.header__navbar__list--item--link:hover{
+    color: #e8e1d0;
+}
+.alineacionDerecha{
+    justify-content: flex-end;
+}
+/*=========================== PAGINA INDEX ===========================*/
+body{
+    background: #e8e1d0;
+}
+/*GALERIA DE FOTOS SLIDE -------------------------------------------------*/
+.imagenCarrusel{
+    width: 450px;
+}
+.variasFotos{
+    display: flex;
+    flex-direction: row;
+}
+/*PROMOS -------------------------------------------------*/
+.tituloPromos{
+    font-family:'Lilita One', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #204349;
+    padding: 1rem;
+    margin: 2% 3% 0 3%;
+}
+.galeriaPromos{
+    margin: 0 3% 3% 3%;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.galeriaPromosHijos{
+    margin: 2%;
+}
+/*MOSTRADOR -------------------------------------------------*/
+.mostradorPrincipal{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+    background-color: #96A4BC;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.seccionesArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.imgMostradorPrincipal{
+    width: 100%;
+}
+.botonVerMas{
+    text-decoration: none;
+    text-transform: none;
+    background-color: #000;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.botonVerMas:hover{
+    background-color: whitesmoke;
+    color: #000;
+}
+.titulosVerMas{
+    font-size: 70px;
+    font-family: roboto-regular;
+    font-weight: bold;
+}
+
+/*========================= PAGINAS PARTICULARES =============================*/
+/*GALERIA DE FOTOS PARTICULAR-------------------------------------------------*/
+.galeriaParticular{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.grid-container img{
+    width: 100%;
+    height: auto;
+}
+/*TITULO DE CATEGORIA -------------------------------------------------*/
+.tituloParticular{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    background-color: #96A4BC;
+}
+.tituloParticular h2{
+    color: #274447;
+    font-size: 50px;
+    font-family:'Lilita One', cursive;
+}
+/*GALERIA DE PRODUCTOS-------------------------------------------------*/
+.galeriaProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    justify-content: left;
+}
+.productoIndividual{
+    margin: 1rem;
+}
+.productoIndividual:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*=========================== ESTILOS FOOTER ===========================*/
+footer{
+    background-color: #96B7BC;
+    padding-top: 1%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    grid-area: footer;
+}
+.footerInfo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding: 1rem;
+}
+.footerInfoLetra{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footerInfoCopyright{
+    font-size: 15px;
+}
+.footerRedes{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.footerRedesImagen{
+    margin: 10px;
+    width: 40px;
+}
+.footerRedesImagen:hover{
+    box-shadow: 2px 5px 10px #000;
+    border-radius: 100px;
+}
+
+/*=========================== PAGINA CONTACTO ===========================*/
+.tituloConsultas{
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #274447;
+    margin: 2rem;
+    margin-top: 2rem;
+    font-size: 30px;
+}
+.contenedorContacto{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 4.5fr 2.5fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+	"cuadroMail preguntasFrecuentes"
+    "cuadroMail aclaraciones"
+	"footer footer";
+}  
+
+/*CUADRO MAIL -------------------------------------------------*/
+form{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    background-color: #7d969b;
+    margin: 2rem;
+    border: 2px solid #274447;
+    border-radius: 10px;
+    width: 85%;
+    padding: 30px;
+    box-shadow: 2px 5px 10px #000;
+}
+.titulosFormulario{
+    display: flex;
+    width: auto;
+    text-align: left;
+    padding-bottom: 10px;
+}
+textarea{
+    height: 90px;
+    resize: none;
+}
+form button{
+    width: 10%;
+    background-color:grey;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+}
+form button:hover{
+    background-color: white;
+    color: #000;
+}
+.controles{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #274447;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.controles:hover{
+    background-color: beige;
+}
+.cuadroMail{
+    grid-area: cuadroMail;
+}
+
+/*PREGUNTAS Y ACLARACIONES -------------------------------------------*/
+.preguntasFrecuentes{
+    grid-area: preguntasFrecuentes;
+    margin-top: 6rem;
+    height: 75%;
+}
+.aclaraciones{
+    grid-area: aclaraciones;
+    height: 100%;
+}
+.preguntasFrecuentes, .aclaraciones{
+    padding: 1rem;
+    margin-right: 1rem;
+    color: #2f342f;
+    background-color: #7d969b;
+    text-align: center;
+    border-radius: 50px;
+}
+.preguntasFrecuentes__titulo, .aclaraciones__titulo{
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fcf4f5;
+}
+
+/*=========================== BOTON AYUDA ===========================*/
+.botonAyuda{
+    position: fixed;
+    bottom: 0; 
+    right: 0;
+}
+.fotoBotonAyuda:hover{
+    width: 110px;
+    transition: 0.5s;
+}
+
+/*=========================== MEDIA QUERIE ===========================*/
+@media screen and (max-width:1000px){
+    .contenedorContacto{
+        grid-template-columns: 1fr;
+	    grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+	    "cuadroMail"
+        "preguntasFrecuentes"
+        "aclaraciones"
+	    "footer"
+        ;
+    }
+    .tituloConsultas{
+        font-size: 25px;
+    }
+    .preguntasFrecuentes, .aclaraciones{
+        margin: 1rem;
+        height: auto;
+    }
+}
+
