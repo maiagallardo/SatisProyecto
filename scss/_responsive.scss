@@ -1,0 +1,67 @@
+/*=========================== MEDIA QUERIE ===========================*/
+@media screen and (min-width: 992px){
+    .header__navbar{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "cuadroMail"
+            "preguntasFrecuentes"
+            "aclaraciones"
+            "footer"
+        ;
+
+        .tituloConsultas {
+            font-size: 25px;
+        }
+
+        .preguntasFrecuentes {
+            margin: 1rem;
+            height: auto;
+        }
+
+        .aclaraciones {
+            margin: 1rem;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footerInfoLetra {
+        font-size: 15px;
+    }
+
+    .footerInfoCopyright {
+        font-size: 10px;
+    }
+
+    .footerLogo {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 652px){
+    
+    footer{
+        height: 22rem;
+        background-color: red; /*esto es pa ver noma cuando cambia*/
+        
+        .footerInfoLetra {/*nada de esto se aplica y no entiendo por que*/
+            font-size: 5px;
+        }
+    
+        .footerInfoCopyright {
+            font-size: 5px;
+        }
+        
+        .footerRedesImagen{
+            width: 2px;
+        }
+    }
+}

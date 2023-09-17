@@ -1,0 +1,76 @@
+/*=========================== PAGINA INDEX ===========================*/
+
+/*GALERIA DE FOTOS SLIDE -------------------------------------------------*/
+.imagenCarrusel {
+    width: 450px;
+}
+
+/*PROMOS -------------------------------------------------*/
+.tituloPromos {
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #204349;
+    padding: 1rem;
+    margin: 2% 3% 0 3%;
+}
+
+.galeriaPromos {
+    margin: 0 3% 3% 3%;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .galeriaPromosHijos {
+        margin: 2%;
+    }
+}
+
+/*MOSTRADOR -------------------------------------------------*/
+.mostradorPrincipal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    background-color: #96A4BC;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .seccionesArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .imgMostradorPrincipal {
+            width: 100%;
+        }
+
+        .titulosVerMas {
+            font-size: 70px;
+            font-family: roboto-regular;
+            font-weight: bold;
+        }
+
+        .botonVerMas {
+            text-decoration: none;
+            text-transform: none;
+            background-color: #000;
+            color: whitesmoke;
+            border-radius: 12px;
+            padding: 5px 15px;
+            font-size: 20px;
+            font-family: 'Saira Condensed', sans-serif;
+
+            &:hover {
+                background-color: whitesmoke;
+                color: #000;
+            }
+        }
+    }
+}

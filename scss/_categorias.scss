@@ -1,0 +1,48 @@
+/*========================= PAGINAS PARTICULARES =============================*/
+/*GALERIA DE FOTOS PARTICULAR-------------------------------------------------*/
+.galeriaParticular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+/*TITULO DE CATEGORIA -------------------------------------------------*/
+.tituloParticular {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    background-color: #96A4BC;
+
+    h2 {
+        color: #274447;
+        font-size: 50px;
+        font-family: 'Lilita One', cursive;
+    }
+}
+
+/*GALERIA DE PRODUCTOS-------------------------------------------------*/
+.galeriaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    justify-content: left;
+
+    .productoIndividual {
+        margin: 1rem;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}

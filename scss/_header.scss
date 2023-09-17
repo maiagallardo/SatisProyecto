@@ -1,0 +1,39 @@
+/*=========================== ESTILOS HEADER ===========================*/
+
+header {
+    display: flex;
+
+    .header__navbar {
+        background: rgb(156, 184, 187, 255);
+        border-radius: 15px;
+        width: 100%;
+        margin: 1%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+
+        .header__navbar__list {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'IBM Plex Mono', monospace;
+            background: rgb(156, 184, 187, 255);
+            justify-content: flex-end;
+            width: 100%;
+
+            .header__navbar__list--item--link {
+                color: #274447;
+                text-decoration: none;
+                padding: 0.7rem;
+
+                &:hover {
+                    color: #e8e1d0;
+                }
+            }
+
+            .paginaActual{
+                color: #e8e1d0;
+            }
+        }
+    }
+}

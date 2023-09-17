@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #e8e1d0;
+}
+/*=========================== BOTON AYUDA ===========================*/
+.botonAyuda {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    .fotoBotonAyuda {
+        &hover {
+            width: 110px;
+            transition: 0.5s;
+        }
+    }
+}

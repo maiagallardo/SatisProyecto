@@ -1,0 +1,42 @@
+/*=========================== ESTILOS FOOTER ===========================*/
+footer {
+    background-color: #96B7BC;
+    padding-top: 1%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    grid-area: footer;
+
+    .footerInfo {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+        padding: 1rem;
+
+        .footerInfoLetra {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footerInfoCopyright {
+            font-size: 15px;
+        }
+    }
+
+    .footerRedes {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        .footerRedesImagen {
+            margin: 10px;
+            width: 40px;
+
+            &:hover {
+                box-shadow: 2px 5px 10px #000;
+                border-radius: 100px;
+            }
+        }
+    }
+}

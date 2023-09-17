@@ -5,60 +5,59 @@
   box-sizing: border-box;
 }
 
-/*=========================== ESTILOS HEADER ===========================*/
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__navbar {
-  background: rgb(156, 184, 187);
-  border-radius: 15px;
-  width: 100%;
-  height: 70px;
-  margin: 1%;
-  align-items: center;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header__navbar__list {
-  display: flex;
-  justify-content: flex-end; /*no hace nada*/
-  justify-items: flex-end;
-  width: 70%;
-}
-
-.header__navbar__list--item--link {
-  color: #274447;
-  text-decoration: none;
-  padding: 1.2rem;
-}
-
-.header__navbar__list--item--link:hover {
-  color: #e8e1d0;
-}
-
-.alineacionDerecha {
-  justify-content: flex-end;
-}
-
-/*=========================== PAGINA INDEX ===========================*/
 body {
   background: #e8e1d0;
 }
 
+/*=========================== BOTON AYUDA ===========================*/
+.botonAyuda {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.botonAyuda .fotoBotonAyudahover {
+  width: 110px;
+  transition: 0.5s;
+}
+
+/*=========================== ESTILOS HEADER ===========================*/
+header {
+  display: flex;
+}
+header .header__navbar {
+  background: rgb(156, 184, 187);
+  border-radius: 15px;
+  width: 100%;
+  margin: 1%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+header .header__navbar .header__navbar__list {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  background: rgb(156, 184, 187);
+  justify-content: flex-end;
+  width: 100%;
+}
+header .header__navbar .header__navbar__list .header__navbar__list--item--link {
+  color: #274447;
+  text-decoration: none;
+  padding: 0.7rem;
+}
+header .header__navbar .header__navbar__list .header__navbar__list--item--link:hover {
+  color: #e8e1d0;
+}
+header .header__navbar .header__navbar__list .paginaActual {
+  color: #e8e1d0;
+}
+
+/*=========================== PAGINA INDEX ===========================*/
 /*GALERIA DE FOTOS SLIDE -------------------------------------------------*/
 .imagenCarrusel {
   width: 450px;
-}
-
-.variasFotos {
-  display: flex;
-  flex-direction: row;
 }
 
 /*PROMOS -------------------------------------------------*/
@@ -80,8 +79,7 @@ body {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
-.galeriaPromosHijos {
+.galeriaPromos .galeriaPromosHijos {
   margin: 2%;
 }
 
@@ -96,20 +94,22 @@ body {
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.seccionesArea {
+.mostradorPrincipal .seccionesArea {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
 }
-
-.imgMostradorPrincipal {
+.mostradorPrincipal .seccionesArea .imgMostradorPrincipal {
   width: 100%;
 }
-
-.botonVerMas {
+.mostradorPrincipal .seccionesArea .titulosVerMas {
+  font-size: 70px;
+  font-family: roboto-regular;
+  font-weight: bold;
+}
+.mostradorPrincipal .seccionesArea .botonVerMas {
   text-decoration: none;
   text-transform: none;
   background-color: #000;
@@ -119,16 +119,46 @@ body {
   font-size: 20px;
   font-family: "Saira Condensed", sans-serif;
 }
-
-.botonVerMas:hover {
+.mostradorPrincipal .seccionesArea .botonVerMas:hover {
   background-color: whitesmoke;
   color: #000;
 }
 
-.titulosVerMas {
-  font-size: 70px;
-  font-family: roboto-regular;
+/*=========================== ESTILOS FOOTER ===========================*/
+footer {
+  background-color: #96B7BC;
+  padding-top: 1%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rem;
+  grid-area: footer;
+}
+footer .footerInfo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  padding: 1rem;
+}
+footer .footerInfo .footerInfoLetra {
+  font-size: 20px;
   font-weight: bold;
+}
+footer .footerInfo .footerInfoCopyright {
+  font-size: 15px;
+}
+footer .footerRedes {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+footer .footerRedes .footerRedesImagen {
+  margin: 10px;
+  width: 40px;
+}
+footer .footerRedes .footerRedesImagen:hover {
+  box-shadow: 2px 5px 10px #000;
+  border-radius: 100px;
 }
 
 /*========================= PAGINAS PARTICULARES =============================*/
@@ -145,7 +175,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-
 .grid-container img {
   width: 100%;
   height: auto;
@@ -158,7 +187,6 @@ body {
   margin-bottom: -1rem;
   background-color: #96A4BC;
 }
-
 .tituloParticular h2 {
   color: #274447;
   font-size: 50px;
@@ -173,60 +201,25 @@ body {
   margin: 1.5rem;
   justify-content: left;
 }
-
-.productoIndividual {
+.galeriaProductos .productoIndividual {
   margin: 1rem;
 }
-
-.productoIndividual:hover {
+.galeriaProductos .productoIndividual:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/*=========================== ESTILOS FOOTER ===========================*/
-footer {
-  background-color: #96B7BC;
-  padding-top: 1%;
-  margin-top: 1%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 15rem;
-  grid-area: footer;
-}
-
-.footerInfo {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: normal;
-  padding: 1rem;
-}
-
-.footerInfoLetra {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.footerInfoCopyright {
-  font-size: 15px;
-}
-
-.footerRedes {
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-}
-
-.footerRedesImagen {
-  margin: 10px;
-  width: 40px;
-}
-
-.footerRedesImagen:hover {
-  box-shadow: 2px 5px 10px #000;
-  border-radius: 100px;
-}
-
 /*=========================== PAGINA CONTACTO ===========================*/
-.tituloConsultas {
+.contenedorContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4.5fr 2.5fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "cuadroMail preguntasFrecuentes" "cuadroMail aclaraciones" "footer footer";
+}
+.contenedorContacto .cuadroMail {
+  grid-area: cuadroMail;
+}
+.contenedorContacto .cuadroMail .tituloConsultas {
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   font-weight: bold;
@@ -235,17 +228,7 @@ footer {
   margin-top: 2rem;
   font-size: 30px;
 }
-
-.contenedorContacto {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 4.5fr 2.5fr;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "cuadroMail preguntasFrecuentes" "cuadroMail aclaraciones" "footer footer";
-}
-
-/*CUADRO MAIL -------------------------------------------------*/
-form {
+.contenedorContacto .cuadroMail form {
   font-family: "Bree Serif", serif;
   font-size: 18px;
   background-color: #7d969b;
@@ -256,20 +239,28 @@ form {
   padding: 30px;
   box-shadow: 2px 5px 10px #000;
 }
-
-.titulosFormulario {
+.contenedorContacto .cuadroMail form .titulosFormulario {
   display: flex;
   width: auto;
   text-align: left;
   padding-bottom: 10px;
 }
-
-textarea {
+.contenedorContacto .cuadroMail form .controles {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #274447;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contenedorContacto .cuadroMail form .controles:hover {
+  background-color: beige;
+}
+.contenedorContacto .cuadroMail form textarea {
   height: 90px;
   resize: none;
 }
-
-form button {
+.contenedorContacto .cuadroMail form button {
   width: 10%;
   background-color: grey;
   border: none;
@@ -279,42 +270,14 @@ form button {
   font-size: 15px;
   font-family: "Bree Serif", serif;
 }
-
-form button:hover {
+.contenedorContacto .cuadroMail form button:hover {
   background-color: white;
   color: #000;
 }
-
-.controles {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #274447;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.controles:hover {
-  background-color: beige;
-}
-
-.cuadroMail {
-  grid-area: cuadroMail;
-}
-
-/*PREGUNTAS Y ACLARACIONES -------------------------------------------*/
-.preguntasFrecuentes {
+.contenedorContacto .preguntasFrecuentes {
   grid-area: preguntasFrecuentes;
   margin-top: 6rem;
   height: 75%;
-}
-
-.aclaraciones {
-  grid-area: aclaraciones;
-  height: 100%;
-}
-
-.preguntasFrecuentes, .aclaraciones {
   padding: 1rem;
   margin-right: 1rem;
   color: #2f342f;
@@ -322,37 +285,73 @@ form button:hover {
   text-align: center;
   border-radius: 50px;
 }
-
-.preguntasFrecuentes__titulo, .aclaraciones__titulo {
+.contenedorContacto .preguntasFrecuentes .preguntasFrecuentes__titulo {
+  font-family: "Saira Condensed", sans-serif;
+  color: #fcf4f5;
+}
+.contenedorContacto .aclaraciones {
+  grid-area: aclaraciones;
+  height: 100%;
+  padding: 1rem;
+  margin-right: 1rem;
+  color: #2f342f;
+  background-color: #7d969b;
+  text-align: center;
+  border-radius: 50px;
+}
+.contenedorContacto .aclaraciones .aclaraciones__titulo {
   font-family: "Saira Condensed", sans-serif;
   color: #fcf4f5;
 }
 
-/*=========================== BOTON AYUDA ===========================*/
-.botonAyuda {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.fotoBotonAyuda:hover {
-  width: 110px;
-  transition: 0.5s;
-}
-
 /*=========================== MEDIA QUERIE ===========================*/
+@media screen and (min-width: 992px) {
+  .header__navbar {
+    height: 70px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .contenedorContacto {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "cuadroMail" "preguntasFrecuentes" "aclaraciones" "footer";
   }
-  .tituloConsultas {
+  .contenedorContacto .tituloConsultas {
     font-size: 25px;
   }
-  .preguntasFrecuentes, .aclaraciones {
+  .contenedorContacto .preguntasFrecuentes {
     margin: 1rem;
     height: auto;
+  }
+  .contenedorContacto .aclaraciones {
+    margin: 1rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerInfoLetra {
+    font-size: 15px;
+  }
+  .footerInfoCopyright {
+    font-size: 10px;
+  }
+  .footerLogo {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 652px) {
+  footer {
+    height: 22rem;
+    background-color: red; /*esto es pa ver noma cuando cambia*/
+  }
+  footer .footerInfoLetra { /*nada de esto se aplica y no entiendo por que*/
+    font-size: 5px;
+  }
+  footer .footerInfoCopyright {
+    font-size: 5px;
+  }
+  footer .footerRedesImagen {
+    width: 2px;
   }
 }
 

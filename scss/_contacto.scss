@@ -1,0 +1,113 @@
+/*=========================== PAGINA CONTACTO ===========================*/
+.contenedorContacto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4.5fr 2.5fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "cuadroMail preguntasFrecuentes"
+        "cuadroMail aclaraciones"
+        "footer footer";
+
+    .cuadroMail {
+        grid-area: cuadroMail;
+
+        .tituloConsultas {
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #274447;
+            margin: 2rem;
+            margin-top: 2rem;
+            font-size: 30px;
+
+            
+        }
+        form {
+            font-family: 'Bree Serif', serif;
+            font-size: 18px;
+            background-color: #7d969b;
+            margin: 2rem;
+            border: 2px solid #274447;
+            border-radius: 10px;
+            width: 85%;
+            padding: 30px;
+            box-shadow: 2px 5px 10px #000;
+
+            .titulosFormulario {
+                display: flex;
+                width: auto;
+                text-align: left;
+                padding-bottom: 10px;
+
+            }
+
+            .controles {
+                width: 100%;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #274447;
+                margin-bottom: 10px;
+                font-size: 16px;
+
+                &:hover {
+                    background-color: beige;
+                }
+            }
+
+            textarea {
+                height: 90px;
+                resize: none;
+            }
+
+            button {
+                width: 10%;
+                background-color: grey;
+                border: none;
+                padding: 8px;
+                border-radius: 5px;
+                color: black;
+                font-size: 15px;
+                font-family: 'Bree Serif', serif;
+
+                &:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .preguntasFrecuentes {
+        grid-area: preguntasFrecuentes;
+        margin-top: 6rem;
+        height: 75%;
+        padding: 1rem;
+        margin-right: 1rem;
+        color: #2f342f;
+        background-color: #7d969b;
+        text-align: center;
+        border-radius: 50px;
+
+        .preguntasFrecuentes__titulo {
+            font-family: 'Saira Condensed', sans-serif;
+            color: #fcf4f5;
+        }
+    }
+
+    .aclaraciones {
+        grid-area: aclaraciones;
+        height: 100%;
+        padding: 1rem;
+        margin-right: 1rem;
+        color: #2f342f;
+        background-color: #7d969b;
+        text-align: center;
+        border-radius: 50px;
+
+        .aclaraciones__titulo {
+            font-family: 'Saira Condensed', sans-serif;
+            color: #fcf4f5;
+        }
+    }
+}
