@@ -65,10 +65,10 @@ header .header__navbar .header__navbar__list .paginaActual {
   font-family: "Lilita One", cursive;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
   color: #204349;
   padding: 1rem;
-  margin: 2% 3% 0 3%;
+  margin: 2% 3% 0 2%;
 }
 
 .galeriaPromos {
@@ -77,7 +77,7 @@ header .header__navbar .header__navbar__list .paginaActual {
   overflow-x: scroll;
 }
 .galeriaPromos .galeriaPromosHijos {
-  min-width: 280px;
+  min-width: 250px;
   height: 300px;
 }
 .galeriaPromos .galeriaPromosHijos .imagenHijos {
@@ -182,7 +182,7 @@ footer .footerRedes .footerRedesImagen:hover {
 .grid-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 }
 .grid-container img {
   width: 100%;
@@ -338,6 +338,12 @@ footer .footerRedes .footerRedesImagen:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .tituloPromos {
+    font-size: 20px;
+  }
+  .galeriaPromos .galeriaPromosHijos .imagenHijos {
+    width: 200px;
+  }
   .mostradorPrincipal {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -369,6 +375,9 @@ footer .footerRedes .footerRedesImagen:hover {
   }
 }
 @media screen and (max-width: 652px) {
+  .tituloParticular h2 {
+    font-size: 30px;
+  }
   footer {
     height: 22rem;
     display: grid;
