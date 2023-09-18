@@ -19,13 +19,23 @@
 .galeriaPromos {
     margin: 0 3% 3% 3%;
     display: flex;
-    width: auto;
-    flex-direction: row;
     overflow-x: scroll;
-    overflow-y: hidden;
 
     .galeriaPromosHijos {
-        margin: 2%;
+        min-width: 280px;
+        height: 300px;
+
+        .imagenHijos {
+            width: 220px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 0.2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #384547;
     }
 }
 

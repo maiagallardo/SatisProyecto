@@ -74,13 +74,20 @@ header .header__navbar .header__navbar__list .paginaActual {
 .galeriaPromos {
   margin: 0 3% 3% 3%;
   display: flex;
-  width: auto;
-  flex-direction: row;
   overflow-x: scroll;
-  overflow-y: hidden;
 }
 .galeriaPromos .galeriaPromosHijos {
-  margin: 2%;
+  min-width: 280px;
+  height: 300px;
+}
+.galeriaPromos .galeriaPromosHijos .imagenHijos {
+  width: 220px;
+}
+.galeriaPromos::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.galeriaPromos::-webkit-scrollbar-thumb {
+  background-color: #384547;
 }
 
 /*MOSTRADOR -------------------------------------------------*/
@@ -139,6 +146,7 @@ footer .footerInfo {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   padding: 1rem;
+  grid-area: footerInfo;
 }
 footer .footerInfo .footerInfoLetra {
   font-size: 20px;
@@ -151,6 +159,7 @@ footer .footerRedes {
   display: flex;
   align-items: center;
   margin-right: 2rem;
+  grid-area: footerRedes;
 }
 footer .footerRedes .footerRedesImagen {
   margin: 10px;
@@ -329,11 +338,31 @@ footer .footerRedes .footerRedesImagen:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .footerInfoLetra {
-    font-size: 15px;
+  .mostradorPrincipal {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "mostradorFotoCocina" "mostradorFotoVasos" "mostradorFotoBotellas" "mostradorFotoDecoracion" "mostradorFotoLibreria" "mostradorFotoInfantil" "mostradorFotoMate";
   }
-  .footerInfoCopyright {
-    font-size: 10px;
+  .mostradorPrincipal .mostradorFotoCocina {
+    grid-area: mostradorFotoCocina;
+  }
+  .mostradorPrincipal .mostradorFotoVasos {
+    grid-area: mostradorFotoVasos;
+  }
+  .mostradorPrincipal .mostradorFotoBotellas {
+    grid-area: mostradorFotoBotellas;
+  }
+  .mostradorPrincipal .mostradorFotoDecoracion {
+    grid-area: mostradorFotoDecoracion;
+  }
+  .mostradorPrincipal .mostradorFotoLibreria {
+    grid-area: mostradorFotoLibreria;
+  }
+  .mostradorPrincipal .mostradorFotoInfantil {
+    grid-area: mostradorFotoInfantil;
+  }
+  .mostradorPrincipal .mostradorFotoMate {
+    grid-area: mostradorFotoMate;
   }
   .footerLogo {
     width: 80px;
@@ -342,10 +371,14 @@ footer .footerRedes .footerRedesImagen:hover {
 @media screen and (max-width: 652px) {
   footer {
     height: 22rem;
-    background-color: red; /*esto es pa ver noma cuando cambia*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "footerInfo" "footerRedes";
   }
-  footer .footerInfoLetra { /*nada de esto se aplica y no entiendo por que*/
-    font-size: 5px;
+  footer .footerInfoLetra {
+    /*nada de esto se aplica y no entiendo por que*/
+    font-size: 10%;
   }
   footer .footerInfoCopyright {
     font-size: 5px;

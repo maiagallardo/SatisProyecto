@@ -1,6 +1,6 @@
 /*=========================== MEDIA QUERIE ===========================*/
-@media screen and (min-width: 992px){
-    .header__navbar{
+@media screen and (min-width: 992px) {
+    .header__navbar {
         height: 70px;
     }
 }
@@ -33,12 +33,47 @@
 }
 
 @media screen and (max-width:768px) {
-    .footerInfoLetra {
-        font-size: 15px;
-    }
+    .mostradorPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "mostradorFotoCocina"
+            "mostradorFotoVasos"
+            "mostradorFotoBotellas"
+            "mostradorFotoDecoracion"
+            "mostradorFotoLibreria"
+            "mostradorFotoInfantil"
+            "mostradorFotoMate"
+        ;
 
-    .footerInfoCopyright {
-        font-size: 10px;
+
+        .mostradorFotoCocina {
+            grid-area: mostradorFotoCocina;
+        }
+
+        .mostradorFotoVasos {
+            grid-area: mostradorFotoVasos;
+        }
+
+        .mostradorFotoBotellas {
+            grid-area: mostradorFotoBotellas;
+        }
+
+        .mostradorFotoDecoracion {
+            grid-area: mostradorFotoDecoracion;
+        }
+
+        .mostradorFotoLibreria {
+            grid-area: mostradorFotoLibreria;
+        }
+
+        .mostradorFotoInfantil {
+            grid-area: mostradorFotoInfantil;
+        }
+
+        .mostradorFotoMate {
+            grid-area: mostradorFotoMate;
+        }
     }
 
     .footerLogo {
@@ -46,21 +81,28 @@
     }
 }
 
-@media screen and (max-width: 652px){
-    
-    footer{
+@media screen and (max-width: 652px) {
+
+    footer {
         height: 22rem;
-        background-color: red; /*esto es pa ver noma cuando cambia*/
-        
-        .footerInfoLetra {/*nada de esto se aplica y no entiendo por que*/
-            font-size: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "footerInfo"
+            "footerRedes"
+        ;
+
+        .footerInfoLetra {
+            /*nada de esto se aplica y no entiendo por que*/
+            font-size: 10%;
         }
-    
+
         .footerInfoCopyright {
             font-size: 5px;
         }
-        
-        .footerRedesImagen{
+
+        .footerRedesImagen {
             width: 2px;
         }
     }

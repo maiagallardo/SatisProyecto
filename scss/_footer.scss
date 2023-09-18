@@ -13,6 +13,7 @@ footer {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: normal;
         padding: 1rem;
+        grid-area: footerInfo;
 
         .footerInfoLetra {
             font-size: 20px;
@@ -28,6 +29,7 @@ footer {
         display: flex;
         align-items: center;
         margin-right: 2rem;
+        grid-area: footerRedes;
 
         .footerRedesImagen {
             margin: 10px;
