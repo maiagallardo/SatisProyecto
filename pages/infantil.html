@@ -1,50 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="../multimedia/fotomariposa1.png" type="image/x-iconn">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Satis</title>
+    <style>
+        body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header class="headerNavParticular">
-        <div class ="headerLogo">
-            <a href="../index.html"><img id="logo" src="../multimedia/logoHorizontal.png" width="250px" alt="satisMariposa"></a>
-        </div>
-        <ul class="headerMenu">
-            <li>
-                <a class="headerLink" href="./cocina.html">Cocina</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./vasos.html">Vasos</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./botellas.html">Botellas</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./decoracion.html">Decoracion</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./libreria.html">Libreria</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./infantil.html">Infantil</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./mate.html">Mate</a>
-            </li>
-            <li>
-                <a class="headerLink" href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg header__navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img id="logo" src="../multimedia/logoHorizontal.png"
+                        width="250px" alt="satisMariposa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav header__navbar__list">
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/cocina.html">Cocina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/vasos.html">Vasos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/botellas.html">Botellas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/decoracion.html">Decoracion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/libreria.html">Libreria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link paginaActual" href="../pages/infantil.html">Infantil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/mate.html">Mate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__navbar__list--item--link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <main>
+        <section class="galeriaParticular grid-container">
+            <img id="galeria1" src="../SatisImagenes/infantil/lunchera rigida stich.jpeg" alt="">
+            <img id="galeria2" src="../SatisImagenes/infantil/individual infantil pato.jpeg" alt="">
+            <img id="galeria3" src="../SatisImagenes/infantil/bowl hombre ara+¦a.jpeg" alt="">
+        </section>
+        <section class="tituloParticular">
+            <h2>Infantil</h2>
+        </section>
+        <section class="galeriaProductos">
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/taza plastico bob esponja.jpeg" class="card-img-top"
+                    alt="tazaPlasticoBob">
+                <div class="card-body">
+                    <h5 class="card-title">Taza Bob Esponja</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/taza plastico pato.jpeg" class="card-img-top"
+                    alt="tazaPlasticoPato">
+                <div class="card-body">
+                    <h5 class="card-title">Taza Pato</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/taza plastico stich.jpeg" class="card-img-top"
+                    alt="tazaPlasticoStitch">
+                <div class="card-body">
+                    <h5 class="card-title">Taza Stitch</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/bowl hombre ara+¦a.jpeg" class="card-img-top"
+                    alt="bowlHombreArania">
+                <div class="card-body">
+                    <h5 class="card-title">Bowl Hombre Araña</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/bowl mickey.jpeg" class="card-img-top"
+                    alt="bowlMickey">
+                <div class="card-body">
+                    <h5 class="card-title">Bowl Mickey</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/bowl princesas.jpeg" class="card-img-top"
+                    alt="bowlPrincesas">
+                <div class="card-body">
+                    <h5 class="card-title">Bowl Princesas</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/bowl stich.jpeg" class="card-img-top"
+                    alt="bowlStitch">
+                <div class="card-body">
+                    <h5 class="card-title">Bowl Stitch</h5>
+                    <p class="card-text"><b>$800</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/lunchera rigida hombre ara+¦a.jpeg" class="card-img-top"
+                    alt="luncheraArania">
+                <div class="card-body">
+                    <h5 class="card-title">Lunchera Hombre Araña</h5>
+                    <p class="card-text"><b>$2200</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/lunchera rigida mickey.jpeg" class="card-img-top"
+                    alt="luncheraMickey">
+                <div class="card-body">
+                    <h5 class="card-title">Lunchera Mickey</h5>
+                    <p class="card-text"><b>$2200</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/lunchera rigida stich.jpeg" class="card-img-top"
+                    alt="luncheraStitch">
+                <div class="card-body">
+                    <h5 class="card-title">Lunchera Stitch</h5>
+                    <p class="card-text"><b>$2200</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/lunchera rigida princesas.jpeg" class="card-img-top"
+                    alt="luncheraPrincesas">
+                <div class="card-body">
+                    <h5 class="card-title">Lunchera Princesas</h5>
+                    <p class="card-text"><b>$2200</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/individual infantil bob esponja.jpeg" class="card-img-top"
+                    alt="individualBob">
+                <div class="card-body">
+                    <h5 class="card-title">Individual Bob Esponja</h5>
+                    <p class="card-text"><b>$1100</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/individual infantil pato.jpeg" class="card-img-top"
+                    alt="individualPato">
+                <div class="card-body">
+                    <h5 class="card-title">Individual Pato</h5>
+                    <p class="card-text"><b>$1100</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="card productoIndividual" style="width: 18rem;">
+                <img src="../SatisImagenes/infantil/individual infantil stich.jpeg" class="card-img-top"
+                    alt="individualStitch">
+                <div class="card-body">
+                    <h5 class="card-title">Individual Stitch</h5>
+                    <p class="card-text"><b>$1100</b></p>
+                    <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footerInfo">
+            <h4 class="footerInfoLetra">Este proyecto es un sitio web para la venta de productos creado por Maia
+                Gallardo para el curso de
+                Desarrollo Web de Coderhouse</h4>
+            <h5 class="footerInfoCopyright">Copyright © 2023 Maia Gallardo. Derechos reservados.</h5>
+            <img class="footerLogo" src="../multimedia/fotomariposa1.png" width="100px" alt="">
+        </div>
+        <div class="footerRedes">
+            <a href="https://www.instagram.com/satisoficial_/"><img class="footerRedesImagen"
+                    src="../multimedia/logoInstagram.ico" alt="Logo de Instagram"></a>
+            <a href="https://www.twitter.com/"><img class="footerRedesImagen"
+                    src="../multimedia/logoTwitter.ico" alt="Logo de Twitter"></a>
+            <a href="https://web.whatsapp.com/"><img class="footerRedesImagen"
+                    src="../multimedia/logoWhatsapp.ico" alt="Logo de Whatsapp"></a>
+            <a href="https://www.facebook.com/"><img class="footerRedesImagen"
+                    src="../multimedia/logoFacebook.ico" alt="Logo de Facebook"></a>
+        </div>
+    </footer>
     <section>
-        <a class="botonAyuda" href="https://web.whatsapp.com/"><img src="../multimedia/botonAyuda.png" width="150px" alt="itemAyuda"></a>
+        <a class="botonAyuda" href="https://web.whatsapp.com/"><img src="../multimedia/botonAyuda.png" width="100px"
+                alt="itemAyuda"></a>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 </html>

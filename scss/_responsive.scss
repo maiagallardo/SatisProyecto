@@ -34,7 +34,9 @@
 
 @media screen and (max-width:768px) {
     .tituloPromos {
-        font-size: 20px;
+        font-size: 22px;
+        background-color: #83A0A5;
+        margin: 2% 0 2% 0;
     }
 
     .galeriaPromos{
@@ -111,15 +113,6 @@
             "footerInfo"
             "footerRedes"
         ;
-
-        .footerInfoLetra {
-            /*nada de esto se aplica y no entiendo por que*/
-            font-size: 10%;
-        }
-
-        .footerInfoCopyright {
-            font-size: 5px;
-        }
 
         .footerRedesImagen {
             width: 2px;

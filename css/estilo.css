@@ -17,7 +17,7 @@ body {
 }
 .botonAyuda .fotoBotonAyudahover {
   width: 110px;
-  transition: 0.5s;
+  transition: width 0.5s;
 }
 
 /*=========================== ESTILOS HEADER ===========================*/
@@ -67,8 +67,8 @@ header .header__navbar .header__navbar__list .paginaActual {
   font-weight: bold;
   font-size: 28px;
   color: #204349;
-  padding: 1rem;
-  margin: 2% 3% 0 2%;
+  padding: 1%;
+  margin: 2% 0 2% 2%;
 }
 
 .galeriaPromos {
@@ -76,18 +76,18 @@ header .header__navbar .header__navbar__list .paginaActual {
   display: flex;
   overflow-x: scroll;
 }
+.galeriaPromos::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.galeriaPromos::-webkit-scrollbar-thumb {
+  background-color: #384547;
+}
 .galeriaPromos .galeriaPromosHijos {
   min-width: 250px;
   height: 300px;
 }
 .galeriaPromos .galeriaPromosHijos .imagenHijos {
   width: 220px;
-}
-.galeriaPromos::-webkit-scrollbar {
-  width: 0.2rem;
-}
-.galeriaPromos::-webkit-scrollbar-thumb {
-  background-color: #384547;
 }
 
 /*MOSTRADOR -------------------------------------------------*/
@@ -339,7 +339,9 @@ footer .footerRedes .footerRedesImagen:hover {
 }
 @media screen and (max-width: 768px) {
   .tituloPromos {
-    font-size: 20px;
+    font-size: 22px;
+    background-color: #83A0A5;
+    margin: 2% 0 2% 0;
   }
   .galeriaPromos .galeriaPromosHijos {
     min-width: 220px;
@@ -387,13 +389,6 @@ footer .footerRedes .footerRedesImagen:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "footerInfo" "footerRedes";
-  }
-  footer .footerInfoLetra {
-    /*nada de esto se aplica y no entiendo por que*/
-    font-size: 10%;
-  }
-  footer .footerInfoCopyright {
-    font-size: 5px;
   }
   footer .footerRedesImagen {
     width: 2px;
