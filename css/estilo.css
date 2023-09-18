@@ -341,6 +341,9 @@ footer .footerRedes .footerRedesImagen:hover {
   .tituloPromos {
     font-size: 20px;
   }
+  .galeriaPromos .galeriaPromosHijos {
+    min-width: 220px;
+  }
   .galeriaPromos .galeriaPromosHijos .imagenHijos {
     width: 200px;
   }
