@@ -4,9 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkeo de archivos CSS y bootstrap -->
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <title>Satis</title>
     <link rel="shortcut icon" href="./multimedia/fotomariposa1.png" type="image/x-iconn">
+
+    <!--Descripcion de la pagina-->
+    <meta name="description" content="Productos para el hogar y mucho más!">
+    <!--autor-->
+    <meta name="author" content="Maia Gallardo">
+    <!-- copyright -->
+    <meta name="copyright" content="Maia Gallardo">
+    <!-- palabras claves de busqueda (no afecta al seo de la pagina) -->
+    <meta name="keywords" content="Productos, Hogar, Decoracion, Cocina, Botellas, Infantil, Libreria, Mate, Vasos">
+
+    <!--fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -16,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>Satis</title>
+
+
     <style>
         body {
             animation: fadeInAnimation ease 2s;
@@ -38,6 +56,7 @@
 </head>
 
 <body>
+    <!--===========================HEADER=============================-->
     <header>
         <nav class="navbar navbar-expand-lg header__navbar">
             <div class="container-fluid">
@@ -97,18 +116,19 @@
                     <img src="./multimedia/galeriaTresIndex.png" class="imagenCarrusel d-block w-100" alt="">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button"
-                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button"
-                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
         <section>
+            <!--===========================PROMOS=============================-->
             <h1 class="tituloPromos">Promos</h1>
             <div class="galeriaPromos">
                 <div class="galeriaPromosHijos">
@@ -140,14 +160,16 @@
                     </div>
                 </div>
                 <div class="galeriaPromosHijos">
-                    <img class="imagenHijos" src="./SatisImagenes/cocina/Organizador heladera con manija-1.jpeg" alt="organizador">
+                    <img class="imagenHijos" src="./SatisImagenes/cocina/Organizador heladera con manija-1.jpeg"
+                        alt="organizador">
                     <div>
                         <h5><b>2 x $2000</b></h5>
                         <p>Organizador de Heladera</p>
                     </div>
                 </div>
                 <div class="galeriaPromosHijos">
-                    <img class="imagenHijos" src="./SatisImagenes/infantil/individual infantil pato.jpeg" alt="individualInfantil">
+                    <img class="imagenHijos" src="./SatisImagenes/infantil/individual infantil pato.jpeg"
+                        alt="individualInfantil">
                     <div>
                         <h5><b>$1000 c/u</b></h5>
                         <p>Comprando + de 4 individuales</p>
@@ -156,6 +178,7 @@
             </div>
 
         </section>
+        <!--===========================CATEGORIAS MOSTRADOR=============================-->
         <section class="mostradorPrincipal">
             <div class="seccionesArea mostradorFotoCocina">
                 <img class="imgMostradorPrincipal" src="./SatisImagenes/cocina/seca platos gris.jpeg" alt="secaPlato">
@@ -173,7 +196,8 @@
                     alt="vasoVintaje">
             </div>
             <div class="seccionesArea mostradorFotoBotellas">
-                <img class="imgMostradorPrincipal" src="./SatisImagenes/botellas/Vidrio limones.jpg" alt="botellaVidrio">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/botellas/Vidrio limones.jpg"
+                    alt="botellaVidrio">
             </div>
             <div class="seccionesArea mostradorFotoBotellas z-1">
                 <h2 class="titulosVerMas">Botellas</h2>
@@ -188,8 +212,8 @@
                     alt="muniecosBuda">
             </div>
             <div class="seccionesArea mostradorFotoLibreria">
-                <img class="imgMostradorPrincipal"
-                    src="./SatisImagenes/libreria/Pizarra imantada fluya.jpg" alt="pizarraImantada">
+                <img class="imgMostradorPrincipal" src="./SatisImagenes/libreria/Pizarra imantada fluya.jpg"
+                    alt="pizarraImantada">
             </div>
             <div class="seccionesArea mostradorFotoLibreria z-1">
                 <h2 class="titulosVerMas">Librería</h2>
@@ -212,6 +236,7 @@
             </div>
         </section>
     </main>
+    <!--===========================FOOTER=============================-->
     <footer>
         <div class="footerInfo">
             <h4 class="footerInfoLetra">Este proyecto es un sitio web para la venta de productos creado por Maia
@@ -223,21 +248,23 @@
         <div class="footerRedes">
             <a href="https://www.instagram.com/satisoficial_/"><img class="footerRedesImagen"
                     src="./multimedia/logoInstagram.ico" alt="Logo de Instagram"></a>
-            <a href="https://www.twitter.com/"><img class="footerRedesImagen"
-                    src="./multimedia/logoTwitter.ico" alt="Logo de Twitter"></a>
-            <a href="https://web.whatsapp.com/"><img class="footerRedesImagen"
-                    src="./multimedia/logoWhatsapp.ico" alt="Logo de Whatsapp"></a>
-            <a href="https://www.facebook.com/"><img class="footerRedesImagen"
-                    src="./multimedia/logoFacebook.ico" alt="Logo de Facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footerRedesImagen" src="./multimedia/logoTwitter.ico"
+                    alt="Logo de Twitter"></a>
+            <a href="https://web.whatsapp.com/"><img class="footerRedesImagen" src="./multimedia/logoWhatsapp.ico"
+                    alt="Logo de Whatsapp"></a>
+            <a href="https://www.facebook.com/"><img class="footerRedesImagen" src="./multimedia/logoFacebook.ico"
+                    alt="Logo de Facebook"></a>
         </div>
     </footer>
-
+    <!--===========================BOTON AYUDA=============================-->
     <section>
         <a class="botonAyuda" href="https://web.whatsapp.com/"><img class="fotoBotonAyuda"
                 src="./multimedia/botonAyuda.png" width="100px" alt="itemAyuda"></a>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

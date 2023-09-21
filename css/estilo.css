@@ -15,9 +15,11 @@ body {
   bottom: 0;
   right: 0;
 }
-.botonAyuda .fotoBotonAyudahover {
-  width: 110px;
-  transition: width 0.5s;
+.botonAyuda .fotoBotonAyuda {
+  transition: 0.5s;
+}
+.botonAyuda .fotoBotonAyuda:hover {
+  width: 115px;
 }
 
 /*=========================== ESTILOS HEADER ===========================*/
@@ -270,7 +272,7 @@ footer .footerRedes .footerRedesImagen:hover {
   resize: none;
 }
 .contenedorContacto .cuadroMail form button {
-  width: 10%;
+  width: auto;
   background-color: grey;
   border: none;
   padding: 8px;
@@ -345,6 +347,7 @@ footer .footerRedes .footerRedesImagen:hover {
   }
   .galeriaPromos .galeriaPromosHijos {
     min-width: 220px;
+    height: 265px;
   }
   .galeriaPromos .galeriaPromosHijos .imagenHijos {
     width: 200px;
@@ -378,6 +381,9 @@ footer .footerRedes .footerRedesImagen:hover {
   .footerLogo {
     width: 80px;
   }
+  .galeriaProductos {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 652px) {
   .tituloParticular h2 {
@@ -392,6 +398,9 @@ footer .footerRedes .footerRedesImagen:hover {
   }
   footer .footerRedesImagen {
     width: 2px;
+  }
+  .contenedorContacto .cuadroMail .tituloConsultas {
+    font-size: 25px;
   }
 }
 

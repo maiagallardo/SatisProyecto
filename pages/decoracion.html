@@ -4,9 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkeo de archivos CSS y bootstrap -->
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Satis | Decoración</title>
     <link rel="shortcut icon" href="../multimedia/fotomariposa1.png" type="image/x-iconn">
+
+    <!--Descripcion de la pagina-->
+    <meta name="description" content="Productos para el hogar y mucho más!">
+    <!--autor-->
+    <meta name="author" content="Maia Gallardo">
+    <!-- copyright -->
+    <meta name="copyright" content="Maia Gallardo">
+    <!-- palabras claves de busqueda (no afecta al seo de la pagina) -->
+    <meta name="keywords" content="Productos, Hogar, Decoracion, Cocina, Botellas, Infantil, Libreria, Mate, Vasos">
+
+    <!--fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
@@ -16,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <title>Satis</title>
+
+
     <style>
         body {
             animation: fadeInAnimation ease 2s;
@@ -38,6 +56,7 @@
 </head>
 
 <body>
+    <!--===========================HEADER=============================-->
     <header>
         <nav class="navbar navbar-expand-lg header__navbar">
             <div class="container-fluid">
@@ -56,22 +75,27 @@
                             <a class="nav-link header__navbar__list--item--link" href="../pages/vasos.html">Vasos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__navbar__list--item--link" href="../pages/botellas.html">Botellas</a>
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="../pages/botellas.html">Botellas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__navbar__list--item--link paginaActual" href="../pages/decoracion.html">Decoracion</a>
+                            <a class="nav-link header__navbar__list--item--link paginaActual"
+                                href="../pages/decoracion.html">Decoracion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__navbar__list--item--link" href="../pages/libreria.html">Libreria</a>
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="../pages/libreria.html">Libreria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__navbar__list--item--link" href="../pages/infantil.html">Infantil</a>
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="../pages/infantil.html">Infantil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header__navbar__list--item--link" href="../pages/mate.html">Mate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__navbar__list--item--link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link header__navbar__list--item--link"
+                                href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -79,16 +103,18 @@
         </nav>
     </header>
     <main>
+        <!--===========================GALERIA DE FOTOS=============================-->
         <section class="galeriaParticular grid-container">
             <img id="galeria1" src="../SatisImagenes/decoracion/Floreros artesanales 2.jpg" alt="">
             <img id="galeria2" src="../SatisImagenes/decoracion/Cesto arpillera AMA.jpg" alt="">
             <img id="galeria3" src="../SatisImagenes/decoracion/Porta llaves sweet home.jpg" alt="">
         </section>
+        <!--===========================GALERIA DE PRODUCTOS=============================-->
         <section class="tituloParticular">
             <h2>Decoración</h2>
         </section>
         <section class="galeriaProductos">
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/individualPalmera.jpg" class="card-img-top"
                     alt="individualPalmera">
                 <div class="card-body">
@@ -98,9 +124,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/individual hoja.jpg" class="card-img-top"
-                    alt="individualHojas">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/individual hoja.jpg" class="card-img-top" alt="individualHojas">
                 <div class="card-body">
                     <h5 class="card-title">Individual Hojas</h5>
                     <p class="card-text">Diámetro: 38cm</p>
@@ -108,9 +133,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/IndividualFlores.jpg" class="card-img-top"
-                    alt="individualFlores">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/IndividualFlores.jpg" class="card-img-top" alt="individualFlores">
                 <div class="card-body">
                     <h5 class="card-title">Individual Flores</h5>
                     <p class="card-text">Diámetro: 38cm</p>
@@ -118,7 +142,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/individual mancha.jpg" class="card-img-top"
                     alt="individualMancha">
                 <div class="card-body">
@@ -128,9 +152,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Posa vaso palmera.jpg" class="card-img-top"
-                    alt="posaVasoPalmera">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Posa vaso palmera.jpg" class="card-img-top" alt="posaVasoPalmera">
                 <div class="card-body">
                     <h5 class="card-title">Posavaso Palmera</h5>
                     <p class="card-text">Diámetro: 9cm</p>
@@ -138,9 +161,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Posa vaso hojas.jpg" class="card-img-top"
-                    alt="posaVasoHojas">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Posa vaso hojas.jpg" class="card-img-top" alt="posaVasoHojas">
                 <div class="card-body">
                     <h5 class="card-title">Posavaso Hojas</h5>
                     <p class="card-text">Diámetro: 9cm</p>
@@ -148,9 +170,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/posa vaso flores.jpg" class="card-img-top"
-                    alt="posaVasoFlores">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/posa vaso flores.jpg" class="card-img-top" alt="posaVasoFlores">
                 <div class="card-body">
                     <h5 class="card-title">Posavaso Flores</h5>
                     <p class="card-text">Diámetro: 9cm</p>
@@ -158,9 +179,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/posa vaso mancha.jpg" class="card-img-top"
-                    alt="posaVasoMancha">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/posa vaso mancha.jpg" class="card-img-top" alt="posaVasoMancha">
                 <div class="card-body">
                     <h5 class="card-title">Posavaso Mancha</h5>
                     <p class="card-text">Diámetro: 9cm</p>
@@ -168,9 +188,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Porta vela flor.jpg" class="card-img-top"
-                    alt="portaVelaFlor">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Porta vela flor.jpg" class="card-img-top" alt="portaVelaFlor">
                 <div class="card-body">
                     <h5 class="card-title">Porta Vela Flor</h5>
                     <p class="card-text">De madera. Incluye la vela.</p>
@@ -178,9 +197,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Porta vela geo.jpg" class="card-img-top"
-                    alt="portaVelaGeo">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Porta vela geo.jpg" class="card-img-top" alt="portaVelaGeo">
                 <div class="card-body">
                     <h5 class="card-title">Porta Vela Geo</h5>
                     <p class="card-text">De madera. Incluye la vela.</p>
@@ -188,9 +206,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Porta vela hoja.jpg" class="card-img-top"
-                    alt="portaVelaHoja">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Porta vela hoja.jpg" class="card-img-top" alt="portaVelaHoja">
                 <div class="card-body">
                     <h5 class="card-title">Porta Vela Hoja</h5>
                     <p class="card-text">De madera. Incluye la vela.</p>
@@ -198,9 +215,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/palabra madera relax.jpg" class="card-img-top"
-                    alt="palabraRelax">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/palabra madera relax.jpg" class="card-img-top" alt="palabraRelax">
                 <div class="card-body">
                     <h5 class="card-title">Palabra Relax</h5>
                     <p class="card-text">27cm ancho x 10cm alto.</p>
@@ -208,9 +224,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Palabra madera hola.jpg" class="card-img-top"
-                    alt="palabraHola">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Palabra madera hola.jpg" class="card-img-top" alt="palabraHola">
                 <div class="card-body">
                     <h5 class="card-title">Palabra Hola</h5>
                     <p class="card-text">27cm ancho x 10cm alto.</p>
@@ -218,9 +233,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Palabra madera home.jpg" class="card-img-top"
-                    alt="palabraHome">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Palabra madera home.jpg" class="card-img-top" alt="palabraHome">
                 <div class="card-body">
                     <h5 class="card-title">Palabra Home</h5>
                     <p class="card-text">27cm ancho x 10cm alto.</p>
@@ -228,7 +242,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Porta llaves sweet home.jpg" class="card-img-top"
                     alt="portaLlavesHomeSweetHome">
                 <div class="card-body">
@@ -238,7 +252,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Portallaves vibes.jpg" class="card-img-top"
                     alt="portaLlavesVibes">
                 <div class="card-body">
@@ -248,7 +262,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Portallaves viaje.jpg" class="card-img-top"
                     alt="portaLlavesViaje">
                 <div class="card-body">
@@ -258,9 +272,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Portallaves Home.jpg" class="card-img-top"
-                    alt="portaLlavesHome">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Portallaves Home.jpg" class="card-img-top" alt="portaLlavesHome">
                 <div class="card-body">
                     <h5 class="card-title">Portallaves</h5>
                     <p class="card-text">Ancho: 20cm. Alto: 10cm.</p>
@@ -268,9 +281,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Portallaves Love.jpg" class="card-img-top"
-                    alt="portaLlavesLove">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Portallaves Love.jpg" class="card-img-top" alt="portaLlavesLove">
                 <div class="card-body">
                     <h5 class="card-title">Portallaves</h5>
                     <p class="card-text">Ancho: 20cm. Alto: 10cm.</p>
@@ -278,9 +290,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/almohadonLove.jpg" class="card-img-top"
-                    alt="almohadonLove">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/almohadonLove.jpg" class="card-img-top" alt="almohadonLove">
                 <div class="card-body">
                     <h5 class="card-title">Almohadón Love</h5>
                     <p class="card-text">Funda de lienzo. Relleno de vellón</p>
@@ -289,9 +300,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/almohadonHome.jpg" class="card-img-top"
-                    alt="almohadonHome">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/almohadonHome.jpg" class="card-img-top" alt="almohadonHome">
                 <div class="card-body">
                     <h5 class="card-title">Almohadón Home</h5>
                     <p class="card-text">Funda de lienzo. Relleno de vellón</p>
@@ -300,9 +310,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/almohadonLive.jpg" class="card-img-top"
-                    alt="almohadonLive">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/almohadonLive.jpg" class="card-img-top" alt="almohadonLive">
                 <div class="card-body">
                     <h5 class="card-title">Almohadón Live</h5>
                     <p class="card-text">Funda de lienzo. Relleno de vellón</p>
@@ -311,9 +320,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/almohadonHojas.jpg" class="card-img-top"
-                    alt="almohadonHojas">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/almohadonHojas.jpg" class="card-img-top" alt="almohadonHojas">
                 <div class="card-body">
                     <h5 class="card-title">Almohadón Hojas</h5>
                     <p class="card-text">Funda de lienzo. Relleno de vellón</p>
@@ -322,9 +330,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Cesto arpillera AMA.jpg" class="card-img-top"
-                    alt="cestoAma">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Cesto arpillera AMA.jpg" class="card-img-top" alt="cestoAma">
                 <div class="card-body">
                     <h5 class="card-title">Cesto de Arpilleria "AMA"</h5>
                     <p class="card-text">Alto: 18cm. Diámetro: 20cm.</p>
@@ -332,9 +339,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Cesto arpillera RIE-1.jpeg" class="card-img-top"
-                    alt="cestoRie">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Cesto arpillera RIE-1.jpeg" class="card-img-top" alt="cestoRie">
                 <div class="card-body">
                     <h5 class="card-title">Cesto de Arpilleria "RIE"</h5>
                     <p class="card-text">Alto: 18cm. Diámetro: 20cm.</p>
@@ -342,9 +348,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Cesto arpillera VIVE-1.jpeg" class="card-img-top"
-                    alt="cestoVive">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Cesto arpillera VIVE-1.jpeg" class="card-img-top" alt="cestoVive">
                 <div class="card-body">
                     <h5 class="card-title">Cesto de Arpilleria "VIVE"</h5>
                     <p class="card-text">Alto: 18cm. Diámetro: 20cm.</p>
@@ -352,9 +357,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Canasto rattan.jpg" class="card-img-top"
-                    alt="canastoRattan1">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Canasto rattan.jpg" class="card-img-top" alt="canastoRattan1">
                 <div class="card-body">
                     <h5 class="card-title">Canasto Rattan</h5>
                     <p class="card-text">Capacidad: 5L</p>
@@ -362,9 +366,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Canastos rattan(1).jpg" class="card-img-top"
-                    alt="canastoRattan2">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Canastos rattan(1).jpg" class="card-img-top" alt="canastoRattan2">
                 <div class="card-body">
                     <h5 class="card-title">Canasto Rattan</h5>
                     <p class="card-text">Capacidad: 5L</p>
@@ -372,9 +375,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Canastos rattan.jpg" class="card-img-top"
-                    alt="canastoRattan3">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Canastos rattan.jpg" class="card-img-top" alt="canastoRattan3">
                 <div class="card-body">
                     <h5 class="card-title">Canasto Rattan</h5>
                     <p class="card-text">Capacidad: 5L</p>
@@ -382,9 +384,8 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
-                <img src="../SatisImagenes/decoracion/Canasto grande rosa.jpeg" class="card-img-top"
-                    alt="canastoRosa">
+            <div class="card productoIndividual" style="width: 14rem;">
+                <img src="../SatisImagenes/decoracion/Canasto grande rosa.jpeg" class="card-img-top" alt="canastoRosa">
                 <div class="card-body">
                     <h5 class="card-title">Canasto Rosa</h5>
                     <p class="card-text">25x17cm. Alto: 11cm.</p>
@@ -392,7 +393,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Canasto grande celeste.jpeg" class="card-img-top"
                     alt="canastoCeleste">
                 <div class="card-body">
@@ -402,7 +403,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x2 Marr+¦n.jpg" class="card-img-top"
                     alt="cajoneraDorada">
                 <div class="card-body">
@@ -412,7 +413,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x2 gris oscuro.jpg" class="card-img-top"
                     alt="cajoneraGrisOscuro">
                 <div class="card-body">
@@ -422,7 +423,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x2 gris claro.jpg" class="card-img-top"
                     alt="cajoneraGris">
                 <div class="card-body">
@@ -432,7 +433,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x3 marr+¦n.jpg" class="card-img-top"
                     alt="cajoneraDoradax3">
                 <div class="card-body">
@@ -442,7 +443,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x3 gris oscuro.jpg" class="card-img-top"
                     alt="cajoneraGrisOscurox3">
                 <div class="card-body">
@@ -452,7 +453,7 @@
                     <a href="#" class="btn btn-primary">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card productoIndividual" style="width: 18rem;">
+            <div class="card productoIndividual" style="width: 14rem;">
                 <img src="../SatisImagenes/decoracion/Cajonera x2 gris claro.jpg" class="card-img-top"
                     alt="cajoneraGrisx3">
                 <div class="card-body">
@@ -464,6 +465,7 @@
             </div>
         </section>
     </main>
+    <!--===========================FOOTER=============================-->
     <footer>
         <div class="footerInfo">
             <h4 class="footerInfoLetra">Este proyecto es un sitio web para la venta de productos creado por Maia
@@ -475,14 +477,15 @@
         <div class="footerRedes">
             <a href="https://www.instagram.com/satisoficial_/"><img class="footerRedesImagen"
                     src="../multimedia/logoInstagram.ico" alt="Logo de Instagram"></a>
-            <a href="https://www.twitter.com/"><img class="footerRedesImagen"
-                    src="../multimedia/logoTwitter.ico" alt="Logo de Twitter"></a>
-            <a href="https://web.whatsapp.com/"><img class="footerRedesImagen"
-                    src="../multimedia/logoWhatsapp.ico" alt="Logo de Whatsapp"></a>
-            <a href="https://www.facebook.com/"><img class="footerRedesImagen"
-                    src="../multimedia/logoFacebook.ico" alt="Logo de Facebook"></a>
+            <a href="https://www.twitter.com/"><img class="footerRedesImagen" src="../multimedia/logoTwitter.ico"
+                    alt="Logo de Twitter"></a>
+            <a href="https://web.whatsapp.com/"><img class="footerRedesImagen" src="../multimedia/logoWhatsapp.ico"
+                    alt="Logo de Whatsapp"></a>
+            <a href="https://www.facebook.com/"><img class="footerRedesImagen" src="../multimedia/logoFacebook.ico"
+                    alt="Logo de Facebook"></a>
         </div>
     </footer>
+    <!--===========================BOTON AYUDA=============================-->
     <section>
         <a class="botonAyuda" href="https://web.whatsapp.com/"><img src="../multimedia/botonAyuda.png" width="100px"
                 alt="itemAyuda"></a>
@@ -491,4 +494,5 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

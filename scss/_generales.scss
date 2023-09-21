@@ -4,9 +4,11 @@
     border: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #e8e1d0;
 }
+
 /*=========================== BOTON AYUDA ===========================*/
 .botonAyuda {
     position: fixed;
@@ -14,9 +16,10 @@ body {
     right: 0;
 
     .fotoBotonAyuda {
-        &hover {
-            width: 110px;
-            transition: width 0.5s;
+        transition: 0.5s;
+
+        &:hover {
+            width: 115px;
         }
     }
 }

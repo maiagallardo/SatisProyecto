@@ -40,8 +40,10 @@
     }
 
     .galeriaPromos{
+
         .galeriaPromosHijos{
             min-width: 220px;
+            height: 265px;
             .imagenHijos{
                 width: 200px;
             }
@@ -94,6 +96,10 @@
     .footerLogo {
         width: 80px;
     }
+
+    .galeriaProductos{
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 652px) {
@@ -118,4 +124,13 @@
             width: 2px;
         }
     }
+
+    .contenedorContacto{
+        .cuadroMail{
+            .tituloConsultas{
+                font-size: 25px;
+            }
+        }
+    }
+    
 }
