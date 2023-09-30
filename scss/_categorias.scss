@@ -36,13 +36,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1.5rem;
-    justify-content: left;
+    justify-content: center;
 
     .productoIndividual {
         margin: 1rem;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .botonCarrito{
+            background-color: #96A4BC;
+            font-weight: bold;
         }
     }
 }
