@@ -100,6 +100,37 @@
     .galeriaProductos{
         justify-content: center;
     }
+
+    .body404{
+        .main404{
+            .info404{
+                .infoTexto{
+                    & h3{
+                        font-size: 1.2rem;
+                    }
+                }
+                .infoBoton{
+                    & a{
+                        & button{
+                            width: 15rem;
+                            height: 3.5rem;
+                            & span{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .imagen404{
+                width: 100%;
+                .imagen404error{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 652px) {
@@ -130,6 +161,49 @@
             .tituloConsultas{
                 font-size: 25px;
             }
+        }
+    }
+
+    .body404{
+        .main404{
+            .info404{
+                .infoTexto{
+                    & h1{
+                        font-size: 2rem;
+                    }
+                    & h3{
+                        font-size: 1rem;
+                    }
+                }
+                .infoBoton{
+                    & a{
+                        & button{
+                            width: max-content;
+                            font-size: 0.8rem;
+                            & span{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+            .imagen404{
+                width: 100%;
+                .imagen404error{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+    
+@media screen and (max-width: 500px){
+
+    .body404{
+        .main404{
+            width: 100%;
+            flex-direction: column;
         }
     }
     

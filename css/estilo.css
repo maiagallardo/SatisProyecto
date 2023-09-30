@@ -23,12 +23,53 @@ body {
 }
 
 /*=========================== 404 ===========================*/
-.main404 {
+.body404 {
+  background-color: rgb(156, 184, 187);
+}
+.body404 .main404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+}
+.body404 .main404 .info404 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 5%;
 }
+.body404 .main404 .info404 .infoTexto {
+  font-family: "Lilita One", cursive;
+}
+.body404 .main404 .info404 .infoBoton {
+  align-self: flex-end;
+  font-family: Georgia, roboto-regular;
+}
+.body404 .main404 .info404 .infoBoton a button {
+  padding: 1rem;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 1rem;
+  transition: linear 0.2s;
+}
+.body404 .main404 .info404 .infoBoton a button span {
+  display: none;
+  padding-right: 1rem;
+}
+.body404 .main404 .info404 .infoBoton a button:hover {
+  padding-left: 1.5rem;
+}
+.body404 .main404 .info404 .infoBoton a button:hover > span {
+  display: inline;
+}
+.body404 .main404 .imagen404 {
+  width: 100%;
+}
+.body404 .main404 .imagen404 .imagen404error {
+  width: 100%;
+}
+
 /*=========================== ESTILOS HEADER ===========================*/
 header {
   display: flex;
@@ -395,6 +436,22 @@ footer .footerRedes .footerRedesImagen:hover {
   .galeriaProductos {
     justify-content: center;
   }
+  .body404 .main404 .info404 .infoTexto h3 {
+    font-size: 1.2rem;
+  }
+  .body404 .main404 .info404 .infoBoton a button {
+    width: 15rem;
+    height: 3.5rem;
+  }
+  .body404 .main404 .info404 .infoBoton a button span {
+    display: inline;
+  }
+  .body404 .main404 .imagen404 {
+    width: 100%;
+  }
+  .body404 .main404 .imagen404 .imagen404error {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 652px) {
   .tituloParticular h2 {
@@ -412,6 +469,31 @@ footer .footerRedes .footerRedesImagen:hover {
   }
   .contenedorContacto .cuadroMail .tituloConsultas {
     font-size: 25px;
+  }
+  .body404 .main404 .info404 .infoTexto h1 {
+    font-size: 2rem;
+  }
+  .body404 .main404 .info404 .infoTexto h3 {
+    font-size: 1rem;
+  }
+  .body404 .main404 .info404 .infoBoton a button {
+    width: max-content;
+    font-size: 0.8rem;
+  }
+  .body404 .main404 .info404 .infoBoton a button span {
+    display: inline;
+  }
+  .body404 .main404 .imagen404 {
+    width: 100%;
+  }
+  .body404 .main404 .imagen404 .imagen404error {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body404 .main404 {
+    width: 100%;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 390px) {

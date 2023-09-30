@@ -25,13 +25,58 @@ body {
 }
 
 /*=========================== 404 ===========================*/
-.main404{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 5%;
+.body404{
+    background-color: rgb(156, 184, 187, 255);
 
-    .info404{
+    .main404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
         
+        .info404{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 5%;
+    
+            .infoTexto{
+                font-family: 'Lilita One', cursive;
+            }
+    
+            .infoBoton{
+                align-self: flex-end;
+                font-family:Georgia, roboto-regular;
+                & a{
+                    & button{
+                        padding: 1rem;
+                        background-color: whitesmoke;
+                        color: black;
+                        border-radius: 1rem;
+                        transition: linear 0.2s;
+                        & span{
+                            display: none;
+                            padding-right: 1rem;
+                        }
+                        &:hover{
+                            padding-left: 1.5rem;
+                        }
+                        &:hover > span{
+                            display: inline;
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        .imagen404{
+            width: 100%;    
+            .imagen404error{
+                width: 100%;
+            }
+        }
     }
 }
+
